@@ -14,17 +14,17 @@
   <div class="main">
     <div class="content">
       <div class="block-data">
-        <div class="container-input">
+        <div class="container-input input-correct">
           <p class="p-name-input">D A Y</p>
-          <input type="number" placeholder="DD">
+          <input type="number" id="input-day" placeholder="DD">
         </div>
-        <div class="container-input">
+        <div class="container-input input-correct">
           <p class="p-name-input">M O N T H</p>
-          <input type="number" placeholder="MM">
+          <input type="number" id="input-month" placeholder="MM">
         </div>
-        <div class="container-input">
+        <div class="container-input input-correct">
           <p class="p-name-input">Y E A R</p>
-          <input type="number" placeholder="YYYY">
+          <input type="number" id="input-year" placeholder="YYYY">
         </div>
         <div class="container">
           
@@ -33,20 +33,20 @@
 
       <div class="block-but">
         <div class="line"></div>
-        <button id="but"><img src="assets/images/icon-arrow.svg" alt=""></button>
+        <button id="button"><img src="assets/images/icon-arrow.svg" alt=""></button>
       </div>
 
       <div class="block-output">
         <div class="container-output">
-          <p class="p-num">- - </p>
+          <p class="p-num" id="output-year">- -</p>
           <p class="p-name-output">years</p>
         </div>
         <div class="container-output">
-          <p class="p-num">- - </p>
+          <p class="p-num" id="output-month">- -</p>
           <p class="p-name-output">months</p>
         </div>
         <div class="container-output">
-          <p class="p-num">- - </p>
+          <p class="p-num" id="output-day">- -</p>
           <p class="p-name-output">days</p>
         </div>
       </div>
@@ -55,8 +55,10 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/aoaoaooaoaoa3301">aoaooaoaoaoa</a>.
   </div>
+
+  <script src="assets/scripts/script.js"></script>
 </body>
 </html>
 <!-- 

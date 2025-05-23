@@ -23,6 +23,7 @@
 body {
     background-color: hsl(0, 0%, 94%);
 }
+
 .p-name-input {
     color: hsl(0, 1%, 44%);
     font-size: 14px;
@@ -32,13 +33,12 @@ body {
 .p-name-output {
     font-family: Poppins-ExtraBoldItalic;
     color: hsl(0, 0, 0);
-    font-size: 5em;
+    font-size: 6em;
 }
-
 .p-num {
     font-family: Poppins-ExtraBoldItalic;
     color: hsl(259, 100%, 65%);
-    font-size: 5em;
+    font-size: 6em;
 }
 
 
@@ -46,7 +46,7 @@ input {
     width: 90%;
     height: 60px;
 
-    border: 1px solid hsl(0, 0%, 86%);
+    
     border-radius: 8px;
 
     text-indent: 20px;
@@ -54,6 +54,16 @@ input {
     font-family: Poppins-ExtraBold;
     font-size: 24px;
 }
+.input-correct input {
+    border: 1px solid hsl(0, 0%, 86%);
+}
+.input-incorrect input{
+    border: 1px solid hsl(0, 100%, 67%);
+}
+.input-incorrect .p-name-input{
+    color: hsl(0, 100%, 67%);
+}
+
 button {
     width: 15%;
     aspect-ratio: 1 / 1;
@@ -70,7 +80,6 @@ button img {
 }
 
 
-
 .main {
     display: flex;
     align-items: center;
@@ -78,13 +87,13 @@ button img {
 
     height: 100vh;
 }
-
 .content {
     width: 50%;
     padding: 70px;
     border-radius: 32px 32px 200px 32px;
     background-color: white;
 }
+
 
 .block-data{
     display: flex;
@@ -99,9 +108,8 @@ button img {
 }
 .line {
     width: 85%;
-    border-bottom: 1px solid hsl(0, 0%, 86%);
-
-    transform: translateY(-50%);
+    border-top: 1px solid hsl(0, 0%, 86%);
+    transform: translateY(50%);
 }
 
 .block-output {
@@ -110,6 +118,6 @@ button img {
 }
 .container-output {
     display: flex;
-
     width: 100%;
+    gap: 20px;
 }
