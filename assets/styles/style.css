@@ -13,6 +13,10 @@
     font-family: Poppins-ExtraBoldItalic;
     src: url(../fonts/Poppins-ExtraBoldItalic.ttf);
 }
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
 
 *{
     padding: 0;
@@ -40,20 +44,36 @@ body {
     color: hsl(259, 100%, 65%);
     font-size: 6em;
 }
+.p-error {
+    color: hsl(0, 100%, 67%);
+    font-family: Poppins-Regular;
+    font-size: 14px;
+}
 
 
 input {
     width: 90%;
     height: 60px;
 
-    
+    border: 0;
     border-radius: 8px;
+    outline: none;
 
     text-indent: 20px;
 
     font-family: Poppins-ExtraBold;
     font-size: 24px;
 }
+#input-day:focus {
+    border: 1px solid hsl(259, 100%, 65%);
+}
+#input-month:focus {
+    border: 1px solid hsl(259, 100%, 65%);
+}
+#input-year:focus {
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
 .input-correct input {
     border: 1px solid hsl(0, 0%, 86%);
 }
